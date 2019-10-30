@@ -5,6 +5,7 @@ class Shoe
   
   def initialize(brand)
     @brand = brand
+    save(brand)
   end
   
   def save(brand)
