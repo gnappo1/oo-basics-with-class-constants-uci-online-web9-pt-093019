@@ -1,14 +1,14 @@
 class Book
   attr_accessor :author, :page_count, :genre
   attr_reader :title
-
+  TITLES = []
   def initialize(title)
     @title = title
-    save(brand)
+    save(title)
   end
   
-  def save(brand)
-    BRANDS << brand unless BRANDS.include?(brand)
+  def save(title)
+    TITLES << title unless BRANDS.include?(title)
   end
   
 
