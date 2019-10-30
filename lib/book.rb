@@ -4,11 +4,11 @@ class Book
   GENRES = []
   def initialize(title)
     @title = title
-    save(title)
+    save(genre) if genre
   end
   
-  def save(title)
-    GENRES << title unless GENRES.include?(title)
+  def save(genre)
+    GENRES << genre unless GENRES.include?(genre)
   end
   
 
