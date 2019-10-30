@@ -8,7 +8,7 @@ class Book
   end
   
   def save(title)
-    TITLES << title unless BRANDS.include?(title)
+    TITLES << title unless TITLES.include?(title)
   end
   
 
